@@ -12,6 +12,11 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Times New Roman';
+}
+
+body {
+  margin: 0px;
 }
 
 /*
@@ -88,22 +93,62 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
+
+   Color palette:
+      Powder blue: #5b70dd
+      Red peach: #f7644c
    ========================================================================== */
 
+body {
+    background-color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
 
+/* Flexbox Containers */
+#main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.content-bar {
+  min-height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* Flexbox visible contents */
+.content-bar#name-header {
+  margin: 0;
+}
+#name-header h1 {
+    font-size: 1.5em;
+    width: 100%;
+    margin: 0;
+}
+.content-bar img {
+  height: 100%;
+  width: 15%;
+}
+.placeholder {
+  border-top: 0.07em solid #000;
+  width: 30%;
+}
+#heather .placeholder {
+  width: 30%;
+}
+#hair .placeholder {
+  width: 60%;
+}
+#techno .placeholder {
+  width: 40%;
+}
 
 
 /* ==========================================================================
