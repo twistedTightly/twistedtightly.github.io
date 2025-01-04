@@ -10,9 +10,9 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.4;
-    font-family: 'Times New Roman';
+    font-family: 'Bentham', serif;
 }
 
 body {
@@ -101,7 +101,6 @@ textarea {
 
 body {
     background-color: #fff;
-    font-family: 'Roboto Mono', monospace;
 }
 
 /* Flexbox Containers */
@@ -111,6 +110,7 @@ body {
   justify-content: space-evenly;
   margin-bottom: 5%;
   margin-left: 5%;
+  margin-right: 5%;
   margin-top: 2%;
 }
 .content-bar {
@@ -125,27 +125,68 @@ body {
 
 /* Flexbox visible contents */
 .content-bar#name-header {
-  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
 }
-#name-header h1 {
-    font-size: 1.5em;
-    width: 100%;
+#name-header h1, #name-header p {
     margin: 0;
 }
+#name-header h1 {
+    font-size: 2em;
+  font-family: "Rubik Glitch", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e58d27;
+}
+#name-header p {
+    font-size: 1em;
+    padding: 0;
+}
+
 .content-bar img {
   height: 100%;
-  width: 15%;
+  width: 20%;
+}
+.content-bar p, .content-bar h3 {
+    padding: 0em 15px;
+}
+.content-bar p {
+    font-size: 1em;
+}
+h3 {
+    font-size: 1.5em;
+    font-family: "Rubik Glitch", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e58d27;
+    width: 100%;
+    margin-block-end: 0;
 }
 .placeholder {
   border-top: 0.07em solid #000;
   width: 30%;
 }
-#heather .placeholder {
-  width: 30%;
-}
+
 #hair .placeholder {
+  width: 15%;
+}
+#about-me {
+    width: 60%;
+}
+
+.heather .placeholder {
+  width: 10%;
+}
+.heather .publications {
   width: 60%;
 }
+p.llm-papers {
+    margin: 10px;
+}
+p.publication {
+    padding-left: 7%;
+}
+
 #techno .placeholder {
   width: 40%;
 }
