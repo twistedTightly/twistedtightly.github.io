@@ -10,9 +10,12 @@
 
 html {
     color: #222;
-    font-size: 1.3em;
-    line-height: 1.4;
-    font-family: 'Old Standard TT', serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-family: "STIX Two Text", serif;
+    /* font-optical-sizing: auto; */
+    font-style: normal;
+    font-weight: 400;
 }
 
 body {
@@ -185,7 +188,7 @@ p.nested {
 #purple-header {
     color: #4242e6;
 }
-#techno .placeholder {
+#contact .placeholder {
     width: 20%;
     min-width: 100px;
 }
